@@ -1,0 +1,14 @@
+/*Menu*/
+#nav{
+    position: sticky;
+    top: 0;
+}
+#menu{
+    padding-left: 0;
+    display: flex;
+    margin:0;
+    padding-top: 0;
+    list-style-type: none;
+    background-color: #590969;
+    margin:0;
+}
