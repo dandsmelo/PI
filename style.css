@@ -28,6 +28,11 @@ header{
     margin:0;
 }
 
+ul{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
 /*Corpo*/
 
 body{
