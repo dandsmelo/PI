@@ -35,10 +35,21 @@ ul{
 
 /*Corpo*/
 
+body{
+    background-image: url(teste-ft-fundo.png);
+    background-size: 800px 335px;
+}
+
 .container{
     display:flex;
     align-items:center;
     justify-content:space-around;
+}
+
+#texto{
+    color:white;
+    width: 380px;
+    height: 262px;
 }
 
 /*Rodapé*/
