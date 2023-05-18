@@ -12,12 +12,18 @@
     text-align: right;
     color: white;
     width: 379px;
-    height: 768px;
 }
-a{
+.buttons{
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 30px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.buttons:hover{
+    background-color: white;
+    color: #010326;
+    border-radius: 98px 0 0 98px;
 }
 #divlogin{
     align-items: center;
@@ -26,28 +32,18 @@ a{
 }
 .formlc{
     width: 300px;
-    height: 700px;
-    margin: 100px 250px 250px 250px;
+    height: 500px;
+    margin: 100px 200px 200px 200px;
 }
-#login{
+.inputinhos{
     padding: 20px;
     padding-bottom: 10px;
-    width: 200px;
+    width: 250px;
     border-top: none;
     border-left: none;
     border-right: none;
     font-size: 17px;
 }
-#password{
-    padding: 20px;
-    padding-bottom: 10px;
-    width: 200px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 17px;
-}
-
 #loginbutton{
     background-color: #010326;
     color: white;
@@ -60,4 +56,5 @@ a{
 #forgetpassword{
     color: #010326;
     font-size: 17px;
+    text-decoration: none;
 }
