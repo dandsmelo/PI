@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 *{
     margin: 0;
-    font-family: "Poppins";
+    font-family: "Lato";
 }
 #division{
     display: flex;
@@ -36,6 +36,7 @@ a{
     border-top: none;
     border-left: none;
     border-right: none;
+    font-size: 17px;
 }
 #password{
     padding: 20px;
@@ -44,6 +45,7 @@ a{
     border-top: none;
     border-left: none;
     border-right: none;
+    font-size: 17px;
 }
 
 #loginbutton{
@@ -53,7 +55,9 @@ a{
     height: 40px;
     margin: 20px;
     border-radius: 98px;
+    font-size: 17px;
 }
 #forgetpassword{
     color: #010326;
+    font-size: 17px;
 }
