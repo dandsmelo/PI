@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Poppins";
+}
+#division{
+    display: flex;
+}
+#ladinho{
+    background-color: #010326;
+    text-align: right;
+    color: white;
+    width: 379px;
+    height: 768px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+#divlogin{
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.formlc{
+    width: 300px;
+    height: 700px;
+    margin: 100px 250px 250px 250px;
+}
+#login{
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#password{
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#loginbutton{
+    background-color: #010326;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 98px;
+}
+#forgetpassword{
+    color: #010326;
+}
