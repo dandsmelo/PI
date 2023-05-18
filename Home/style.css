@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
+    
     font-family: "Lato";
 
 }
@@ -22,13 +21,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
     list-style-type: none;
-    
     justify-content: space-between;
 
 }
 
 header {
-    background-color: #100121;
+    background-color: #010326;
     margin: 0;
 }
 
@@ -37,59 +35,56 @@ ul {
     justify-content: space-evenly;
 }
 
-.myButton {
-	background-color:#768d87;
-	border-radius:28px;
-	border:1px solid #566963;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	
-	
-	padding:2px 5px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2b665e;
+li{
+    color:white;
+    height: 53px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
 }
-.myButton:hover {
-	background-color:#6c7c7c;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
 
 /*Corpo*/
 
 body {
-    background-image: url(teste-ft-fundo.png);
+    background-color: #010326;
     background-size: 800px 335px;
 }
 
 .container {
     display: flex;
-    align-items: center;
-
+    align-items: ;
     justify-content: center;
 
 }
 
-#texto {
+#logo{
+    width: 518px;
+    height: 509px;
+    padding-top: -173px;
+    padding-left: -415px;
+}
+
+h1{
     color: white;
-    width: 380px;
-    height: 262px;
-    margin-right: 50px;
-    margin-top: 60px;
+    width: 263px;
+    height: 177px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
 }
 
-/*Rodapé*/
+h3{
+    color: white;
+    width: 215px;
+    height: 140px;
 
-footer {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #100121;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
 }
