@@ -3,14 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: "Lato";
 }
 
 body{
     height: 100vh;
     background-image: url(space-background-with-starfield-free-download-thumb45\ 1.png);
     background-size: cover;
-    background-color: rgba(0, 9, 44, 1);
+    background-color: rgba(0, 9, 44, 1); /* Cor para solidificar a imagem que esta transparente*/
 }
     
 .corpo{
