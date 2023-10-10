@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Lato";
+    color: white;
 }
 
 body{
@@ -22,4 +23,60 @@ body{
     background-color: rgba(0, 9, 44, 1);
     overflow: auto;
     border-radius: 3%;
+    
+}
+
+/*PERFIL*/
+
+#perfil{
+    width:100%;
+    height: 120px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+#ft-nm{
+    display: flex;
+    flex-direction:row;
+}
+
+/*FOTO CAPA*/
+
+#ft-capa{
+    width:100%;
+    height: 60px;
+}
+
+/*FOTO PERFIL*/
+
+#foto{
+    border: solid #5213A3;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+}
+
+/*EDITAR PERFIL*/
+
+#editar{
+    margin-right: 70px;
+}
+
+/*BTN PROJETOS E SALVOS*/
+#projetos-salvos{
+    margin-left: 80px;
+}
+#projetos-salvos button{
+    color: black;
+    width: 100px;
+    height: 20px;
+}
+
+/*PROJETOS*/
+
+#projetos{
+    border-top: 2px solid white;
+    width: 100%;
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foto de Perfil</title>
+</head>
+<body>
+    <h1>Upload de Foto de Perfil</h1>
+
+    <!-- Formulário para fazer upload da foto -->
+    <form id="upload-form">
+        <input type="file" id="file-input" accept="image/*">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Exibir a foto de perfil -->
+    <div id="profile-picture">
+        <img id="profile-image" src="" alt="Foto de Perfil">
+    </div>
+
+    <!-- JavaScript para lidar com o upload e exibição da foto -->
+    <script>
+        const uploadForm = document.getElementById('upload-form');
+        const fileInput = document.getElementById('file-input');
+        const profileImage = document.getElementById('profile-image');
+
+        uploadForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Verifique se um arquivo foi selecionado
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+
+                // Crie um objeto URL para a imagem carregada
+                const imageUrl = URL.createObjectURL(file);
+
+                // Exiba a imagem
+                profileImage.src = imageUrl;
+            }
+        });
+    </script>
+</body>
+</html>
