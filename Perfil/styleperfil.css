@@ -30,15 +30,19 @@ body{
 
 #perfil{
     width:100%;
-    height: 120px;
+    height: 90px;
     display: flex;
     flex-direction:row;
     justify-content:space-between;
 }
 
-#ft-nm{
-    display: flex;
-    flex-direction:row;
+#infos{
+    position: absolute;
+    left: 200px;
+}
+
+ul{
+    list-style-type: none;
 }
 
 /*FOTO CAPA*/
@@ -56,6 +60,9 @@ body{
     width: 100px;
     height: 100px;
     margin-left: 70px;
+    position: absolute;
+    top: 19px;
+
 }
 
 /*EDITAR PERFIL*/
