@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    height: 100vh;
+    background-image: url(space-background-with-starfield-free-download-thumb45\ 1.png);
+    background-size: cover;
+    background-color: rgba(0, 9, 44, 1);
+}
+    
+.corpo{
+    width: 70%;
+    height: 85%;
+    margin-top: 50px;
+    margin-left: 220px;
+    position: absolute; 
+    background-color: rgba(0, 9, 44, 1);
+    overflow: auto;
+    border-radius: 3%;
+}
