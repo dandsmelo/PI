@@ -117,12 +117,41 @@ ul{
 
 
 #retangulo{
-    width: 700px; 
-    height: 250px; 
-    background-color: #5213A3; 
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 700px;
+    background-color: #5213A3;
+    /* padding: 0 10px; */ 
+    border-radius: 10px 10px 0 0;
+    margin-top: -200px; 
     
+}
+
+#button-ver{
+    margin-right: 8%;
+    margin-top: -2px;
+    align-items: center;  
+    
+}
+
+#style-botao{
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 6px; 
+}
+
+#conteudo{
+    border-top: 2px solid white;
+    background-color: #5213A3;
+    align-items: center; 
+    width: 700px;
+    display: flex;
+    justify-content: center;  
+    height: 200px;  
+    margin-left: 13.4%;
+    margin-top: -253px;
     
 }
