@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styleperfil.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="scriptperfil.js"></script>
     <title>Perfil do Aluno</title>
 </head>
 <body>
@@ -21,23 +22,31 @@
 
         <div id="perfil">
 
-            <div id="ft-perfil">
-                <img id="foto" src="ff6a01e0377bb7df597f856a5f5f73c5.png" alt="Foto de Perfil">
-            </div>
+            <img id="foto" src="ff6a01e0377bb7df597f856a5f5f73c5.png" alt="Foto de Perfil">
     
             <div id="infos">
-                <h2>Beyonce</h2>
-                <ul>
-                    <li>Info</li>
-                    <li>Info</li>
-                </ul>
+                <h2 id="user-name" >Beyonce</h2>
+                <p id="user-description">Descrição do Usuário</p>
             </div>
             
             <div id="editar">
-
-                <button id="editar-perfil">Editar Perfil</button>
+                <button onclick="openEditModal()" id="editar-perfil" >Editar Perfil</button>
             </div>
 
+            
+            <div id="edit-modal">
+                <div id="edit-modal-content">
+                <h2>Editar Perfil</h2>
+                <form id="user-profile-form">
+                    <input type="file" id="cover-photo-file" accept="image/*" placeholder="Foto de Capa">
+                    <input type="file" id="profile-photo-file" accept="image/*" placeholder="Foto de Perfil">
+                    <input type="text" id="user-name-input" placeholder="Seu Nome">
+                    <input type="text" id="user-description-input" placeholder="Sua Descrição">
+                    <button type="button" onclick="updateProfile()">Salvar Alterações</button>
+                    <button type="button" onclick="closeEditModal()">Fechar</button>
+                </form>
+                </div>
+            </div>
         </div>
 
         <div id="projetos-salvos">

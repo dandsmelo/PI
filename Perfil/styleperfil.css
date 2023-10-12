@@ -68,7 +68,8 @@ ul{
 /*EDITAR PERFIL*/
 
 #editar{
-    margin-right: 70px;
+    position: absolute;
+    left: 750px;
 }
 
 /*BTN PROJETOS E SALVOS*/
@@ -80,6 +81,28 @@ ul{
     width: 100px;
     height: 20px;
 }
+
+/* styleperfil.css */
+#edit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#edit-modal-content {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /*PROJETOS*/
 
