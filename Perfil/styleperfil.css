@@ -5,6 +5,7 @@
     padding: 0;
     font-family: "Lato";
     color: white;
+    font-weight: bold;
 }
 
 body{
@@ -81,10 +82,11 @@ ul{
     background-color: transparent; 
     color: white; 
     border: none; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
+    padding: 5px 10px; 
+    border-radius: 10px; 
     cursor: pointer; 
-    font-size: 18px;
+    font-size: 20px;
+    
     
     
 }
@@ -94,19 +96,20 @@ ul{
 }
 
 .botao:hover {
-    background-color: #5213A3;
+    background-color: #dcd7e4;
+    color: #5213A3;
 }
-</style>
+
 
 /*BTN PROJETOS E SALVOS*/
 #projetos-salvos{
     margin-left: 80px;
 }
+
 #projetos-salvos button{
-    color: black;
-    width: 100px;
-    height: 20px;
+    border-radius: 10px 10px 0px 0px;
 }
+
 
 
 /* styleperfil.css */
