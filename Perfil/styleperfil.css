@@ -69,8 +69,34 @@ ul{
 
 #editar{
     position: absolute;
-    left: 750px;
+    left: 700px;
 }
+
+#img-user{
+    width: 20px;
+    height: 20px;
+}
+
+.botao {
+    background-color: transparent; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px;
+    
+    
+}
+
+.icone {
+    margin-right: 5px; 
+}
+
+.botao:hover {
+    background-color: #5213A3;
+}
+</style>
 
 /*BTN PROJETOS E SALVOS*/
 #projetos-salvos{
@@ -81,6 +107,7 @@ ul{
     width: 100px;
     height: 20px;
 }
+
 
 /* styleperfil.css */
 #edit-modal {
@@ -106,52 +133,77 @@ ul{
 
 /*PROJETOS*/
 
+/*PROJETOS*/
+
 #projetos{
     border-top: 2px solid white;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center; 
-    align-items: center; 
-    height: 65%; 
+    align-items: center;     
+    box-sizing: border-box;
 }
-
-
-#retangulo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 48px;
-    width: 700px;
-    background-color: #5213A3;
-    /* padding: 0 10px; */ 
-    border-radius: 10px 10px 0 0;
-    margin-top: -200px; 
     
-}
+    #minhaDiv{
+        height: 43%;
+        display: flex; 
+        margin-top: 50px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        position: relative;
+    }
 
-#button-ver{
-    margin-right: 8%;
-    margin-top: -2px;
-    align-items: center;  
-    
-}
+    #campo-descricao {
+        width: 100%; 
+        height: 200px;
+        padding: 10px; 
+        background-color:blueviolet;
+        position: relative;
+        margin-bottom: 20%;
 
-#style-botao{
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 5px 10px;
-    border-radius: 6px; 
-}
+    }
 
-#conteudo{
-    border-top: 2px solid white;
-    background-color: #5213A3;
-    align-items: center; 
-    width: 700px;
-    display: flex;
-    justify-content: center;  
-    height: 200px;  
-    margin-left: 13.4%;
-    margin-top: -253px;
-    
-}
+    #campo-img{
+        background-color: blueviolet;
+        width: 100%; 
+        height: 200px;
+        padding: 10px; 
+        margin-bottom: 20%;
+        
+    }
+
+    #img{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    #overlay {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 11.3%; 
+        background-color:blueviolet; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -27px;
+        margin-left:0;
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    #botao-ver {
+        cursor: pointer;
+        margin-left: 70%;
+        
+    }
+
+    #botao{
+        color: #000000;
+        border: none;
+        padding: 2px 8px;
+        border-radius: 10%;
+        
+    }
