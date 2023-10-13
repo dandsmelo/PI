@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -25,27 +24,13 @@ body{
 #side-bar:hover{
     width: 300px;
 }
-/*
-#side-bar.expandir{
-    width: 300px;
-}
-.btn-menu{
-    width: 100%;
-    padding-left: 10px;
-}
-.btn-menu >img{
-    cursor: pointer; /*indicar que é clicável
-}*/
 ul{
     height: 100%;
     list-style: none;
 }
 ul li.pag-menu{
     transition: .2s;
-}/*
-ul li.pag-menu.selecionado{
-    background-color: #7506BF;
-}*/
+}
 ul li.pag-menu:hover{
     background-color: #7506BF;
 }
