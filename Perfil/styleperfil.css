@@ -69,8 +69,34 @@ ul{
 
 #editar{
     position: absolute;
-    left: 750px;
+    left: 700px;
 }
+
+#img-user{
+    width: 20px;
+    height: 20px;
+}
+
+.botao {
+    background-color: transparent; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px;
+    
+    
+}
+
+.icone {
+    margin-right: 5px; 
+}
+
+.botao:hover {
+    background-color: #5213A3;
+}
+</style>
 
 /*BTN PROJETOS E SALVOS*/
 #projetos-salvos{
@@ -81,6 +107,7 @@ ul{
     width: 100px;
     height: 20px;
 }
+
 
 /* styleperfil.css */
 #edit-modal {
