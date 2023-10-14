@@ -2,16 +2,17 @@ body{
     margin: 0;
 }
 .container{
-    background-color: #ffffff;
+    background-image: url("fundo.jpg");
+    background-size: cover;
+    background-position: center center;
     display: grid;
-    grid-template-columns: 5% 31% 31%  31%;
-    grid-template-rows: 15% 6% auto 15% ; 
+    grid-template-columns: 4% 32% 32% 32%;
+    grid-template-rows: 17% 6% auto 15% ; 
     height: 100vh;
-    row-gap: 1px;
+    row-gap: 2px;
 }
 
 .container div{
-    background-color: aqua;
     padding: 20px;
     font-family: 'Lato', sans-serif;
     color: white;
@@ -20,8 +21,59 @@ body{
 #item1{
     grid-row-start: 1 ; 
     grid-row-end: 5;
-    background-color: #5213A3;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+}
+body{
+    height: 100vh;
+}
+/*Menu lateral*/
+#side-bar{
+    width: 50px;
+    height: 100%;
+    background-color: #420389;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+#side-bar:hover{
+    width: 300px;
+}
+ul{
+    height: 100%;
+    list-style: none;
+}
+ul li.pag-menu{
+    transition: .2s;
+}
+ul li.pag-menu:hover{
+    background-color: #7506BF;
+}
+ul li.pag-menu a{
+    color: #ffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 25px;
+}
+ul li.pag-menu a .icon > img{
+    margin-left: 4px;
+}
+
+ul li.pag-menu a .txt-link{
+    margin-left: 40px;
+}
+
+
+
 
 #item2{
     grid-column-start: 2;
@@ -69,9 +121,8 @@ body{
     padding: 10px;
     justify-self: center;
     background-color: #001049;
-    border-radius: 0px 0px 20px 20px ;
+    border-radius: 4px 4px 20px 20px ;
     font-size: 16px;
-    
 }
 
 #item7{
@@ -79,10 +130,8 @@ body{
     width: 65%;
     justify-self: center;
     background-color: #001049;
-    border-radius: 0px 0px 20px 20px ;
+    border-radius: 4px 4px 20px 20px ;
     font-size: 16px;
- 
-    
 }
 
 #item8{
@@ -90,10 +139,8 @@ body{
     width: 65%;
     justify-self: center;
     background-color: #001049;
-    border-radius: 0px 0px 20px 20px ;
+    border-radius: 4px 4px 20px 20px ;
     font-size: 16px;
-  
-    
 }
 
 #item9{
@@ -104,6 +151,11 @@ body{
 #item2,
 #item9 {
     visibility: hidden;
+}
+
+#text{
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 
