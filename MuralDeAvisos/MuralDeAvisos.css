@@ -2,12 +2,12 @@ body{
     margin: 0;
 }
 .container{
-    background-color: aliceblue;
+    background-color: #ffffff;
     display: grid;
-    grid-template-columns: 5% auto auto auto;
-    grid-template-rows: 20% 6% auto 15% ; 
+    grid-template-columns: 5% 31% 31%  31%;
+    grid-template-rows: 15% 6% auto 15% ; 
     height: 100vh;
-    row-gap: 2px;
+    row-gap: 1px;
 }
 
 .container div{
@@ -29,69 +29,69 @@ body{
 }
 
 #item3{
-    width: 40vh;
+    width: 65%;
     justify-self: center;
     background-color: #420389;
     border-radius: 20px 20px 0px 0px ;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: white;
-    font-size: 15px;
+    font-size: 19px;
     
 }
 
 #item4{
-    width: 40vh;
+    width: 65%;
     justify-self: center;
     background-color: #420389;
     border-radius: 20px 20px 0px 0px ;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: white;
-    font-size: 15px;
+    font-size: 19px;
     
     
 }
 
 #item5{
-    width: 40vh;
+    width: 65%;
     justify-self: center;
     background-color: #420389;
     border-radius: 20px 20px 0px 0px ;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: white;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 #item6{
-    width: 40vh;
-    padding: 20px;
+    width: 65%;
+    padding: 10px;
     justify-self: center;
     background-color: #001049;
     border-radius: 0px 0px 20px 20px ;
-    font-size: 13px;
+    font-size: 16px;
     
 }
 
 #item7{
-    padding: 20px;
-    width: 60%;
+    padding: 10px;
+    width: 65%;
     justify-self: center;
     background-color: #001049;
     border-radius: 0px 0px 20px 20px ;
-    font-size: 13px;
+    font-size: 16px;
  
     
 }
 
 #item8{
-    padding: 20px;
-    width: 40vh;
+    padding: 10px;
+    width: 65%;
     justify-self: center;
     background-color: #001049;
     border-radius: 0px 0px 20px 20px ;
-    font-size: 13px;
+    font-size: 16px;
   
     
 }
