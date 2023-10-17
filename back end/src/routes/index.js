@@ -9,5 +9,6 @@ router
     .post('/adc', projControllers.Adicionar)
     .put('/att/:id', projControllers.Atualizar)
     .post('/cad', projControllers.Cadastrar)
+    .post('/aut', projControllers.Login)
 
 module.exports = router
