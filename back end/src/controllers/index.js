@@ -53,7 +53,21 @@ class projControllers {
 
     static async Login(req, res){
         await database.sync();
-        let data = await tabela.findAll({raw})
+        let data = await tabela.findAll({raw : true});
+        let array = Object.keys(data)
+        let registros = Object.values(data)
+        let credenciais = req.body
+        let verificacao = false
+        for(let i = 0; i < array.length; i++){
+            if(req.body.senha == registros[i].senha && req.body.nome == registros[i].nome){
+                verificacao = true
+            }
+        }
+        if(verificacao == true){
+            res.send('logado')
+        }else{
+            res.send('login invalido')
+        }
     }
 
     
