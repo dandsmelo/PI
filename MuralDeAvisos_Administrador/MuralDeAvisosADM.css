@@ -4,7 +4,7 @@ body{
 .container{
     background-image: url("background.png");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: grid;
     grid-template-columns: 4% 32% 32% 32%;
     grid-template-rows: 17% 6% auto 15% ; 
@@ -145,18 +145,37 @@ ul li.pag-menu a .txt-link{
 
 #item9{
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 2;
+    justify-self: center;
 }
 
-#item2,
-#item9 {
-    visibility: hidden;
+#item10{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    justify-self: center;
 }
+
+#item11{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-self: center;
+}
+
+
 
 #text{
     margin-left: 5%;
     margin-top: 5%;
 }
 
-
-
+#botao{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #420389;
+    background: #420389;
+    color: #ffff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 19px;
+}
