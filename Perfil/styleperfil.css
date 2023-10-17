@@ -81,7 +81,7 @@ ul{
     background-color: transparent; 
     color: white; 
     border: none; 
-    padding: 5px 10px; 
+    padding: 5px 12px; 
     border-radius: 30px; 
     cursor: pointer; 
     font-size: 20px;
@@ -171,32 +171,56 @@ input{
 
 #projetos{
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center; 
-    align-items: center;     
-    box-sizing: border-box;
-    overflow: auto;
+    align-content: center;
+    margin-left: 18%;
 
 }
 
-#campo-descricao {
-    width: 35%; 
-    height: 35%; 
+#overlay{
+    width: 65%;
+    height: 15%;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5213A3;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid white;
+}
+
+#style-aux{
+    width: 65%;
+    height: 15%;
+    background-color: #5213A3;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 2px solid white;
+
+}
+
+#container{
+    width: 65%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+}
+
+ #campo-descricao {
+    width: 50%; 
+    height: 100%; 
     background-color:#5213A3;
-    margin-bottom: 18%;
+    margin-left: 0%;
     
 }
 
 #campo-img{
     background-color: #5213A3;
-    width: 35%; 
-    height: 35%;
-    margin-bottom: 18%;
-    margin-left: 0%;
-    
-    
-    
+    width: 50%; 
+    height: 100%;
+       
 }
 
 #img{
@@ -205,70 +229,33 @@ input{
     align-items: center;
 }
 
-#overlay {
-    position:absolute; 
-    width: 70%;
-    height: 8%; 
-    background-color:#5213A3; 
-    display: flex;
-    align-items: center;
-    margin-bottom: 43.5%;
-    margin-left: 0%;
-    border-radius: 10px 10px 0 0 ;
-    border-bottom: 2px solid white;
-}
-
-#nome{
-    margin-right: 20%;
-    padding-left: 10px;
-
-}
-    
-#botao-saiba-mais{
-    cursor: pointer;
-    margin-left: 70%;
-    
-}
-
-#botao-style{
-    color: #000000;
-    border: none;
-    padding: 2px 8px;
-    background-color: overlay violet;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: #9370DB;
-
-    
-}
-
-#div-style{
-    background-color: #5213A3;
-    width: 70%;
-    height: 8%;
-    margin-top: -262px;
-    margin-left: 15%;
-    border-radius: 0 0 10px 10px;
-    border-top: 2px solid white;
-    
-}
-
 #div-adc-projetos{ 
-  display: flex;  
-  justify-content:flex-end;
+    display: flex;  
+    justify-content:flex-end;
+  
+ }
 
-}
-
-#adicionar-projetos {
-    margin-right: 140px;
-    margin-top: 10px;
-}
-
-#img-projetos{
-    width: 20px;
-    height: 20px;
-}
+ #nome{
+    background-color: transparent; 
+    color: white; 
+    border: none; 
+    padding: 5px 12px; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 20px;
     
+}
+
+#botao-saber-mais{
+    background-color: transparent; 
+    color: white; 
+    border: none; 
+    padding: 5px 12px; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 20px; 
+}
+
 
 
 /*Menu lateral*/
