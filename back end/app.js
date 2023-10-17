@@ -12,5 +12,5 @@ app.use('/login', rotas)
 const porta = 5433;
 
 app.listen(porta, () => {
-    console.log('rodando...')
+    console.log('servidor funcionando na porta: ', porta)
 })
