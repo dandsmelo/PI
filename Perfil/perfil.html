@@ -67,7 +67,7 @@
             <img id="foto" src="ff6a01e0377bb7df597f856a5f5f73c5.png" alt="Foto de Perfil">
     
             <div id="infos">
-                <h2 id="user-name" >Beyonce</h2>
+                <h1 id="user-name" >Beyonce</h1>
                 <p id="user-description">Descrição do Usuário</p>
             </div>
             
@@ -82,12 +82,17 @@
                 <div id="edit-modal-content">
                 <h2>Editar Perfil</h2>
                 <form id="user-profile-form">
+                    <p>Alterar foto da capa:</p>
                     <input type="file" id="cover-photo-file" accept="image/*" placeholder="Foto de Capa">
+                    
+                    <p>Alterar foto do perfil:</p>
                     <input type="file" id="profile-photo-file" accept="image/*" placeholder="Foto de Perfil">
-                    <input type="text" id="user-name-input" placeholder="Seu Nome">
-                    <input type="text" id="user-description-input" placeholder="Sua Descrição">
-                    <button type="button" onclick="updateProfile()">Salvar Alterações</button>
-                    <button type="button" onclick="closeEditModal()">Fechar</button>
+                    
+                    <input type="text" id="user-name-input" placeholder="Alterar Nome">
+                    
+                    <input type="text" id="user-description-input" placeholder="Alterar sua Descrição"></br>
+                    <button class="botao" type="button" onclick="updateProfile()">Salvar Alterações</button>
+                    <button class="botao" type="button" onclick="closeEditModal()">Fechar</button>
                 </form>
                 </div>
             </div>

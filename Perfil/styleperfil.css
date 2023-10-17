@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: "Lato";
     color: white;
-    font-weight: bold;
+   
 }
 
 body{
@@ -83,7 +83,7 @@ ul{
     color: white; 
     border: none; 
     padding: 5px 10px; 
-    border-radius: 10px; 
+    border-radius: 30px; 
     cursor: pointer; 
     font-size: 20px;
     
@@ -121,16 +121,50 @@ ul{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2;
+    overflow: none;
+}
+
+input{
+    width: 100%;
+    border-radius: 30px;
+    border: none; 
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+#cover-photo-file, #profile-photo-file{
+    display: inline-block;
+    background: white;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+#edit-modal .botao{
+    width: 100%;
+}
+
+#edit-modal p, input, h2{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #edit-modal-content {
-    background-color: #fff;
+    background-color:#5213A3;
     width: 80%;
     max-width: 600px;
+    max-height: 800px;
     margin: 100px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+
 }
 
 
@@ -153,7 +187,6 @@ ul{
     width: 35%; 
     height: 35%; 
     background-color:#5213A3;
-    position: relative;
     margin-bottom: 18%;
     
     
@@ -178,7 +211,7 @@ ul{
 }
 
 #overlay {
-    position: absolute; 
+    position:absolute; 
     width: 70%;
     height: 8%; 
     background-color:#5213A3; 
@@ -200,8 +233,6 @@ ul{
 #botao-saiba-mais{
     cursor: pointer;
     margin-left: 70%;
-    
-    
     
 }
 
