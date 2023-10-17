@@ -13,18 +13,17 @@ body{
     background-image: url(space-background-with-starfield-free-download-thumb45\ 1.png);
     background-size: cover;
     background-color: rgba(0, 9, 44, 1); /* Cor para solidificar a imagem que esta transparente*/
+    overflow:hidden;
 }
-    
+
 .corpo{
     width: 70%;
     height: 85%;
     margin-top: 50px;
-    margin-left: 220px;
+    margin-left: 240px;
     position: absolute; 
     background-color: rgba(0, 9, 44, 1);
-    overflow: auto;
     border-radius: 3%;
-    
 }
 
 /*PERFIL*/
@@ -69,8 +68,8 @@ ul{
 /*EDITAR PERFIL*/
 
 #editar{
-    position: absolute;
-    left: 700px;
+    margin-left: 700px;
+    margin-top: 10px;
 }
 
 #img-user{
@@ -86,9 +85,7 @@ ul{
     border-radius: 30px; 
     cursor: pointer; 
     font-size: 20px;
-    
-    
-    
+       
 }
 
 .icone {
@@ -103,7 +100,8 @@ ul{
 
 /*BTN PROJETOS E SALVOS*/
 #projetos-salvos{
-    margin-left: 80px;
+    padding-left: 80px;
+    border-bottom: 2px solid white;
 }
 
 #projetos-salvos button{
@@ -115,13 +113,13 @@ ul{
 /* MODAL */
 #edit-modal {
     display: none;
-    position: fixed;
-    top: 0;
+    /*position: fixed;
+    top: 15px; 
     left: 0;
+    position: absolute;*/
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
     z-index: 2;
     overflow: none;
 }
@@ -133,6 +131,7 @@ input{
     height: 25px;
     margin-bottom: 20px;
 }
+
 
 #cover-photo-file, #profile-photo-file{
     display: inline-block;
@@ -159,11 +158,10 @@ input{
     width: 80%;
     max-width: 600px;
     max-height: 800px;
-    margin: 100px auto;
+    margin: 5px auto;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
 
 }
 
@@ -172,7 +170,6 @@ input{
 
 
 #projetos{
-    border-top: 2px solid white;
     width: 100%;
     height: 100%;
     display: flex;
@@ -188,8 +185,6 @@ input{
     height: 35%; 
     background-color:#5213A3;
     margin-bottom: 18%;
-    
-    
     
 }
 
@@ -225,9 +220,8 @@ input{
 
 #nome{
     margin-right: 20%;
-    
-    
     padding-left: 10px;
+
 }
     
 #botao-saiba-mais{
@@ -260,27 +254,19 @@ input{
 }
 
 #div-adc-projetos{ 
-    margin-top: -325px;
-    margin-left: 87%;
-    width:auto;
-    height: 10px;
-    display: flex;
-    flex-direction:row;
-    justify-content:space-between;
-    
+  display: flex;  
+  justify-content:flex-end;
+
 }
 
 #adicionar-projetos {
-    width: 29px; 
-    height: 29px; 
-    background-color: transparent;
-    background-image: url('adcprojeto.png');
-    background-size: 100%;
-    border: none; 
-    cursor: pointer;
-    margin-right: 10px;
-    padding-left: 30px;
-      
+    margin-right: 140px;
+    margin-top: 10px;
+}
+
+#img-projetos{
+    width: 20px;
+    height: 20px;
 }
     
 
