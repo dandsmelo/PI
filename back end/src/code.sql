@@ -1,10 +1,12 @@
-create database projeto;
-use projeto;
+create database Projeto;
+use Projeto;
 
+insert into dados values ('', 'thigues', 'Th@email.com', 'aaa', '', '');
+select * from dados;
 desc dados;
 
-insert into dados values ('', 'gh', 'gh@email.com', '123', '', '');
+select * from dados;
 
-insert into projetos values ('', 'landing', 'aaaaaaaaaaaaaaa.png', '', '');
+insert into projetos values ('', 'batman', 'uyedgddgd.png', '', '');
 
 select * from projetos;
