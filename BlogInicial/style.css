@@ -26,7 +26,7 @@ body{
 }
 .conteudo-grid{
     text-align: center;
-    margin: 90px 50px 20px 50px;
+    margin: 90px 50px 40px 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -91,7 +91,7 @@ body{
 .div-cont-4{
     margin: 40px 150px 40px 0px;
 }
-#btn-veja{
+.btns{
     font-family: "Lato";
     color: #ffff;
     background-color: #420389;
@@ -104,4 +104,109 @@ body{
     width: 280px;
     font-weight: 600;
     text-decoration: none;
+}
+/*Terceira sessão*/
+.container-3{
+    color: #ffff;
+    text-align: center;
+}
+.container-3 h1{
+    margin: 70px 0 40px 0;
+}
+.container-3 p{
+    margin: 0 250px 0 250px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.container-3 h3{
+    margin: 20px 0 20px 0;
+}
+/*css carrossel*/
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    position: relative;
+}
+.slider {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+}
+#prev-button,
+#next-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+#prev-button {
+    left: 5px;
+}
+
+#next-button {
+    right: 5px;
+}
+
+.on{
+    opacity: 1;
+}
+/*css sessão 4*/
+.container-4{
+    background-color: #ffff;
+}
+#title-s4{
+    color: #420389;
+}
+.title{
+    margin: 0 0 30px 100px;
+    padding-top: 50px;
+}
+.cont-4{
+    margin-left: 50px;
+}
+.cont-4 p{
+    text-align: left;
+    font-size: 20px;
+}
+.conteudo-grid-4{
+    text-align: center;
+    margin: 10px 50px 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.slider2 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+}
+#prev-button2,
+#next-button2 {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+#prev-button2 {
+    left: 5px;
+}
+
+#next-button2 {
+    right: 5px;
+}
+
+.on2{
+    opacity: 1;
 }
