@@ -55,6 +55,13 @@ if (coverProjeto) {
 
 document.getElementById('nome').textContent = nomeProjeto;
 document.getElementById('descricao').textContent = descriProjeto;
+document.getElementById('btn-vermais').value = linkProjeto;
 
 closeEditProjeto();
+}
+
+function abrirLink(){
+  const linkProjeto = document.getElementById('link-projeto').value;
+  window.open(linkProjeto, '_blank');
+  
 }

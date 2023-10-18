@@ -202,10 +202,36 @@ textarea{
 
 /*HOVER LINK PROJETOS*/
 
+.centro-div {
+    transition: 0.3s;
+    width: 65%;
+    height: 65%;
+    transition: background-color 0.3s;
 
-    
+}
 
+.centro-div:hover {
+    background-color: rgba(0, 0, 0, 0.5);   
+}
 
+.botao-no-centro {
+    display: none;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(5, 5, 5); 
+    border: none; 
+    padding: 5px 12px; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 20px;
+}
+
+.centro-div:hover .botao-no-centro {
+    display: block;
+    color: black; 
+}
 
 /*PROJETOS*/
 
@@ -218,7 +244,7 @@ textarea{
     justify-content: center; 
     align-content: center;
     margin-left: 18%;
-
+    
 }
 
 #overlay{
