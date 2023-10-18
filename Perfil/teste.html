@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .centro-div {
+    width: 200px; /* Largura da div */
+    height: 200px; /* Altura da div */
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 200px; /* Define a altura de linha para centralizar verticalmente o texto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+  }
+
+  .centro-div:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura quando o mouse passa por cima */
+  }
+
+  .botao-no-centro {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centro-div:hover .botao-no-centro {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="centro-div">
+  <p>Div no Centro</p>
+  <button class="botao-no-centro">Botão no Centro</button>
+</div>
+
+</body>
+</html>
