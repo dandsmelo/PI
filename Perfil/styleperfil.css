@@ -68,11 +68,17 @@ ul{
 /*EDITAR PERFIL*/
 
 #editar{
-    margin-left: 700px;
-    margin-top: 10px;
+    position: fixed;  
+    top: 120px;       
+    left: 900px;  
 }
 
 #img-user{
+    width: 20px;
+    height: 20px;
+}
+
+#img-projetos{
     width: 20px;
     height: 20px;
 }
@@ -145,7 +151,7 @@ input{
     width: 100%;
 }
 
-#edit-modal p, input, h2{
+#edit-modal input, h2{
     padding: 5px;
     display: flex;
     align-items: center;
@@ -232,6 +238,7 @@ input{
 #div-adc-projetos{ 
     display: flex;  
     justify-content:flex-end;
+    margin-right: 150px;
   
  }
 
