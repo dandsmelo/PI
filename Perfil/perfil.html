@@ -105,11 +105,30 @@
 
 
         <div id=div-adc-projetos>
-                <button class="botao" id="adicionar-projetos">
+                <button type="button" onclick="openAddProjetos()" class="botao" id="adicionar-projetos">
                     <img id="img-projetos" src="adcprojeto.png">
                     Novo Projeto
                 </button>
         </div> 
+
+        <div id="add-projetos">
+            <div id="edit-modal-content">
+            <h2>Adicionar Projeto</h2>
+            <form id="user-profile-form">
+                <input type="text" id="nome-projeto" placeholder="Nome do Projeto"> 
+
+                <input type="text" id="descri-projeto" placeholder="Descrição do Projeto"></br>
+
+                <input type="url" id="link-projeto" placeholder="Repositorio do Projeto"></br>
+
+                <p>Selecione foto do projeto:</p>
+                <input type="file" id="foto-projeto" accept="image/*" placeholder="Foto de Capa">
+
+                <button class="botao" type="button" onclick="updateProjeto()">Salvar Alterações</button>
+                <button class="botao" type="button" onclick="closeEditProjeto()">Fechar</button>
+            </form>
+            </div>
+        </div>
 
         <div id="projetos">
 

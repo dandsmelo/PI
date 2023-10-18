@@ -136,10 +136,12 @@ input{
     border: none; 
     height: 25px;
     margin-bottom: 20px;
+    color:black;
+    padding: 5px;
 }
 
 
-#cover-photo-file, #profile-photo-file{
+#cover-photo-file, #profile-photo-file, #foto-projeto{
     display: inline-block;
     background: white;
     color: #000000;
@@ -170,6 +172,19 @@ input{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 }
+
+/*MODAL PROJETOS*/
+#add-projetos{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    overflow: none;
+}
+
+/*OVER LINK PROJETOS*/
+
+
 
 
 /*PROJETOS*/
@@ -219,7 +234,8 @@ input{
     height: 100%; 
     background-color:#5213A3;
     margin-left: 0%;
-    
+    padding: 20px;
+    text-align: center;
 }
 
 #campo-img{
