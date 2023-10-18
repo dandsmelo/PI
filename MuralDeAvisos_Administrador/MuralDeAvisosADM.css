@@ -77,7 +77,13 @@ ul li.pag-menu a .txt-link{
 
 #item2{
     grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#item22{
+    grid-column-start: 3;
     grid-column-end: 5;
+    justify-self: end;
 }
 
 #item3{
@@ -145,32 +151,20 @@ ul li.pag-menu a .txt-link{
 
 #item9{
     grid-column-start: 2;
-    grid-column-end: 2;
-    justify-self: center;
-}
-
-#item10{
-    grid-column-start: 3;
-    grid-column-end: 3;
-    justify-self: center;
-}
-
-#item11{
-    grid-column-start: 4;
     grid-column-end: 5;
-    justify-self: center;
 }
 
 
 
-#text{
+
+.text{
     margin-left: 5%;
     margin-top: 5%;
 }
 
 #botao{
-    width: 200px;
-    height: 40px;
+    width: 100px;
+    height: 35px;
     border-radius: 30px;
     border: 1px solid #420389;
     background: #420389;
@@ -178,4 +172,89 @@ ul li.pag-menu a .txt-link{
     text-align: center;
     font-family: Lato;
     font-size: 19px;
+}
+
+/*MODAL*/
+
+*{
+    font-family: Lato;
+
+}
+
+.content{
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #bea3a3 ;
+    padding: 10px ;
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #420389;
+    background: #420389;
+    color: #ffff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 19px;
+    transition: backgroud .3s;
+}
+
+.btn:hover{
+    background-color: #001049;
+    border: 1px solid #001049;
+}
+
+.modal{
+    background-color: rgb(0, 0, 0, .5);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.modal-content{
+    margin: 0 auto;
+    max-width: 450px;
+    margin-top: 2%;
+    background-color:  #001049; ;
+    padding: 0;
+}
+
+h1{
+    font-weight: bold;
+    text-align: center;
+}
+.modal-header, modal-body, modal-footer{
+    padding: 10px;
+}
+
+.modal-header{
+    background-color: #420389;
+    font-family: Lato;
+    color: #ffff;  
+}
+
+.modal-body{
+    padding: 10px;
+}
+
+.modal-footer{
+    text-align: center;
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 10px; 
+    font-family: Lato;
+    color: #ffff;  
+}
+
+form{
+    text-align: center;
+}
+
+textarea{
 }

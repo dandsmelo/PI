@@ -54,37 +54,55 @@
             </nav>
         </div>
         <div id="item2"></div>
+        <div id="item22">
+            
+            <button id="botao" onclick="openModal('dv-modal')">Editar</button>
+        
+        </div>
         <div id="item3"><p id="title">Oportunidades</p></div>
         <div id="item4"><p id="title">Eventos</p></div>
         <div id="item5"><p id="title">Secretária</p></div>
         <div id="item6">
             <p></p>
-            <p id="text">Inscrições Abertas: Iniciação científica</p>
-            <p id="text">Maratona CiberEducação Cisco Brasil</p>
-            <p id="text">xx/xx/xxxx</p>
+            <p class="text" id="title1" >Inscrições Abertas: Iniciação científica</p>
         </div>
         <div id="item7">
             <p id="text"></p>
-            <p id="text">Semana da Tecnologia - xx/xx/xxxx</p>
-            <p id="text">Feira de Estágios - xx/xx/xxxx</p>
+            <p class="text" id="title2" >Semana da Tecnologia - xx/xx/xxxx</p>
         </div>
         <div id="item8">
             <p></p>
-            <P id="text">Horários:</P>
-            <p id="text">Segunda: xxx</p>
-            <p id="text">Terça: xxx</p>
-            <p id="text">Quarta: xxxx</p>
+            <P class="text" id="title3" >Horários:</P>
         </div>
-        <div id="item9">
-            <button id="botao" type="submit">Editar</button>
-        </div>
-        <div id="item10">
-            <button id="botao" type="submit">Editar</button>
-        </div>
-        <div id="item11">
-            <button id="botao" type="submit">Editar</button>
-        </div>
+        <div id="item9"></div>
 
+        <div id="dv-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header"><h1>Editar</h1></div>
+                
+                <div class="modal-body">
+                    <form>
+                        <label for="oportunidades">Oportunidades</label>
+                        <textarea id="title1Input" name="opt" rows="4" cols="50"></textarea><br><br>
+        
+                        <label for="eventos">Eventos</label>
+                        <textarea id="title2Input" name="evt" rows="4" cols="50"></textarea><br><br>
+    
+                        <label for="secretaria">Secretária</label>
+                        <textarea id="title3Input" name="sct" rows="4" cols="50"></textarea><br><br>
+    
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn" onclick="salvarDados('title1', 'title2', 'title3')">Salvar</button>
+                    <button class="btn" onclick="closeModal('dv-modal')">Fechar</button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="MuralDeAvisosADM.js"></script> 
+        
     </div>
     
 </body>
