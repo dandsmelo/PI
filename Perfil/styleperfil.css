@@ -197,10 +197,11 @@ textarea{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-    overflow: none;
+    display: none;
 }
 
 /*HOVER LINK PROJETOS*/
+
 
 .centro-div {
     transition: 0.3s;
@@ -210,8 +211,15 @@ textarea{
 
 }
 
-.centro-div:hover {
-    background-color: rgba(0, 0, 0, 0.5);   
+.centro-div:hover::before {
+    content: "";
+    position: absolute;
+    top: 245px;
+    right: 160px;
+    bottom: 35px;
+    left: 170px;
+    background: rgba(5, 5, 5, 0.541); 
+    border-radius: 20px;
 }
 
 .botao-no-centro {
@@ -275,6 +283,8 @@ textarea{
     flex-direction: row;
 }
 
+
+
  #campo-descricao {
     width: 50%; 
     height: 100%; 
@@ -300,8 +310,9 @@ textarea{
 #div-adc-projetos{ 
     display: flex;  
     justify-content:flex-end;
-    margin-right: 150px;
-  
+    margin-right: 140px;
+    margin-top:10px;
+    margin-bottom: 10px;
  }
 
  #nome{
@@ -324,7 +335,6 @@ textarea{
     cursor: pointer; 
     font-size: 20px; 
 }
-
 
 
 /*Menu lateral*/
