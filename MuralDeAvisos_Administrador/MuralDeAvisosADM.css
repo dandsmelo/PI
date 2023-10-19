@@ -162,17 +162,17 @@ ul li.pag-menu a .txt-link{
     margin-top: 5%;
 }
 
-#botao{
-    width: 100px;
-    height: 35px;
-    border-radius: 30px;
-    border: 1px solid #420389;
-    background: #420389;
-    color: #ffff;
-    text-align: center;
-    font-family: Lato;
-    font-size: 19px;
+
+
+#botao {
+    width: 65px; 
+    height: 65px; 
+    background: url('Group\ 1.png') no-repeat center center; 
+    background-size: cover; 
+    border: none; 
+    cursor: pointer; /* Altera o cursor quando passa sobre o botão */
 }
+
 
 /*MODAL*/
 
@@ -189,15 +189,17 @@ ul li.pag-menu a .txt-link{
 }
 
 .btn{
-    width: 100px;
+    width: 150px;
     height: 35px;
     border: 1px solid #420389;
+    border-radius: 30px;
     background: #420389;
     color: #ffff;
     text-align: center;
     font-family: Lato;
     font-size: 19px;
     transition: backgroud .3s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -218,43 +220,53 @@ ul li.pag-menu a .txt-link{
 .modal-content{
     margin: 0 auto;
     max-width: 450px;
-    margin-top: 2%;
+    margin-top: 0%;
     background-color:  #001049; ;
     padding: 0;
+    border-radius: 30px; 
 }
 
-h1{
-    font-weight: bold;
-    text-align: center;
+
+
+.modal-header, .modal-body, .modal-footer {
 }
-.modal-header, modal-body, modal-footer{
-    padding: 10px;
-}
+
 
 .modal-header{
-    background-color: #420389;
     font-family: Lato;
+    font-size: large;
     color: #ffff;  
+    border-radius: 30px 30px 0px 0px; 
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    background-color: #420389;
 }
 
 .modal-body{
-    padding: 10px;
+    
 }
 
 .modal-footer{
     text-align: center;
-    padding: 10px;
+    margin-bottom: 5px;
 }
 
 label {
-    margin-bottom: 10px; 
     font-family: Lato;
     color: #ffff;  
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
 }
 
 form{
+    font-size: 20px;
     text-align: center;
+    border-radius: 30px;
 }
 
 textarea{
+    border-radius: 20px;
+
 }
