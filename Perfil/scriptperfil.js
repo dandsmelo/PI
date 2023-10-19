@@ -65,3 +65,19 @@ function abrirLink(){
   window.open(linkProjeto, '_blank');
   
 }
+
+// GUIA
+document.addEventListener('DOMContentLoaded', function() {
+  const guias = document.querySelectorAll('.guia');
+  const conteudos = document.querySelectorAll('#projetos, #salvos');
+
+  guias.forEach((guia, index) => {
+      guia.addEventListener('click', function() {
+          guias.forEach(g => g.classList.remove('ativa'));
+          conteudos.forEach(c => c.style.display = 'none');
+
+          guia.classList.add('ativa');
+          conteudos[index].style.display = 'block';
+      });
+  });
+});

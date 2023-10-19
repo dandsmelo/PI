@@ -44,12 +44,19 @@ ul{
     list-style-type: none;
 }
 
+#user-description{
+    width: 450px;
+    height: 40px;
+}
+
 /*FOTO CAPA*/
 
 #ft-capa{
     width:100%;
     height: 60px;
+    object-fit: cover;
 }
+
 
 /*FOTO PERFIL*/
 
@@ -61,8 +68,11 @@ ul{
     margin-left: 70px;
     position: absolute;
     top: 19px;
+    background-size: contain;
+    object-fit: cover;
 
 }
+
 
 /*EDITAR PERFIL*/
 
@@ -90,7 +100,6 @@ ul{
     border-radius: 30px; 
     cursor: pointer; 
     font-size: 20px;
-       
 }
 
 .icone {
@@ -386,3 +395,27 @@ ul li.pag-menu a .txt-link{
     margin-left: 40px;
 }
 
+/* GUIA */
+.guia {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: transparent;
+    border: none; 
+    color: white;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 20px;
+}
+
+.guia.ativa {
+    background-color: white;
+    color: black;
+}
+
+#salvos {
+    background-color: #5213A3;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
