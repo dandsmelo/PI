@@ -140,29 +140,39 @@ ul{
 
 input {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
     border: none; 
     height: 25px;
     margin-bottom: 20px;
-    color:black;
+    color:white;
     padding: 5px;
+    background-color: rgba(7, 7, 7, 0.301);
+
+}
+
+input::placeholder {
+    color: white; 
+}
+
+#cover-photo-file, #profile-photo-file, #foto-projeto {
+    display: inline-block;
+    background: rgba(7, 7, 7, 0.301);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 textarea{
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
     border: none; 
-    color:black;
+    color:white;
     padding: 5px;
+    background: rgba(7, 7, 7, 0.301);
 }
 
-
-#cover-photo-file, #profile-photo-file, #foto-projeto {
-    display: inline-block;
-    background: white;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
+textarea::placeholder {
+    color: white; 
 }
 
 #edit-modal .botao{
@@ -417,5 +427,8 @@ ul li.pag-menu a .txt-link{
     background-color: #5213A3;
     color: white;
     padding: 20px;
-    border-radius: 0 0 10px 10px;
+    border-radius:10px;
+    width: 60%;
+    height: 15%;
+    margin-left: 18%;
 }
