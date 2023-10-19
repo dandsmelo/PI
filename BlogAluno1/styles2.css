@@ -1,0 +1,106 @@
+
+  
+        /* fundo azul de traz*/
+        body {
+            height: 100vh;
+            background-image: url(background.png);
+            background-size: cover;
+            
+        }
+        /*parte braca*/
+        .container {
+            max-width: 750px; /* Ajustar conforme necessário */
+            margin: auto;
+            padding: 20px;
+            background-color:  white; /* Ajustar para a cor desejada */
+            border-radius: 15px;
+            color: black;
+        
+        }
+        
+        
+        
+        
+        /*texto da parte branca*/
+        
+        h1,
+        
+        h2 {
+            margin: 10px 0;
+            color: #420389;
+            
+        }
+        
+        .carousel {
+            position: relative;
+            max-width: 60%;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+        
+        .slides {
+            display: flex;
+            transition: transform 0.5s;
+        }
+        
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .indicators span {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            display: inline-block;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .indicators span.active {
+            background-color: purple;
+        }
+        
+        
+        .search-button {
+            background-color: #010326; /* Ajuste para a cor desejada */
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        
+        .search-button:hover {
+            background-color: #150140; /* Cor mais escura para hover */
+        }

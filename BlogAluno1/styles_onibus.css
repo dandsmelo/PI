@@ -1,0 +1,81 @@
+
+
+/* fundo azul */
+body {
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    
+}
+/*parte braca*/
+.container {
+    max-width: 750px; /* Ajustar conforme necessário */
+    margin: auto;
+    padding: 20px;
+    background-color:  white; /* Ajustar para a cor desejada */
+    border-radius: 15px;
+    color: black;
+ 
+
+}
+
+/*texto da parte branca*/
+
+h1,
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: #420389;
+    
+}
+ 
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/*pesquisa do trajeto quadrado roxo*/
+.box-left {
+    width: 35%; 
+    padding: 20px;
+    background-color: #420389;
+    border-radius: 15px;
+    color: white;
+}
+
+/*botao pesquisar trageto*/
+.search-button {
+    background-color: transparent;  /* Ajuste para a cor desejada */
+    color: white;
+    border: none;
+    padding: 5px 12px; 
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #dcd7e4;
+    color: #5213A3; /* Cor mais escura para hover */
+}
+
+
+/*distancia das letras*/
+.schedule {
+    margin-top: 70px;
+}
+/* largura do mapa*/
+.box-right {
+    width: 90%; 
+    border-radius: 15px;
+    overflow: hidden;
+}
+/*mapa*/
+iframe {
+    width: 100%;
+    height: 300px;
+}
