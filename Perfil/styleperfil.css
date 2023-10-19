@@ -67,9 +67,9 @@ ul{
 /*EDITAR PERFIL*/
 
 #editar{
-    position: fixed;  
-    top: 120px;       
-    left: 900px;  
+    position: absolute;  
+    top: 70px;       
+    right: 160px;
 }
 
 #img-user{
@@ -310,7 +310,7 @@ textarea{
 #div-adc-projetos{ 
     display: flex;  
     justify-content:flex-end;
-    margin-right: 140px;
+    margin-right: 160px;
     margin-top:10px;
     margin-bottom: 10px;
  }
