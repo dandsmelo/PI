@@ -8,6 +8,8 @@
 body{
     background-color: rgba(0, 9, 44, 1); /* Cor para solidificar a imagem que esta transparente*/
 }
+#iconUrl{
+}
 .container{
     color: #ffff;
     padding: 40px 50px 0px 50px;
@@ -109,6 +111,10 @@ body{
     font-weight: 600;
     text-decoration: none;
 }
+.div-cont-3 button > a{
+    color: #ffff;
+    text-decoration: none;
+}
 /*Terceira sessão*/
 .container-3{
     color: #ffff;
@@ -188,6 +194,10 @@ body{
 .cont-4 p{
     text-align: left;
     font-size: 20px;
+}
+.cont-4 button > a{
+    color: #ffff;
+    text-decoration: none;
 }
 .conteudo-grid-4{
     text-align: center;
