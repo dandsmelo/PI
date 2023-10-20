@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projetos Integradores</title>
+        <link rel="stylesheet" href="styles2.css" />
+    </head>
+    <body>
+        <nav id="side-bar">
+            <!--<div class="btn-menu">
+                <img src="menu.png" id="expandir">
+            </div>-->
+    
+            <ul>
+                <li class="pag-menu" name="perfil">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="perfilIcon.png">
+                        </span>
+                        <span class="txt-link">Perfil</span>
+                    </a>
+                </li>
+                <li class="pag-menu" name="mural">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="mural.png">
+                        </span>
+                        <span class="txt-link">Mural</span>
+                    </a>
+                </li>
+                <li class="pag-menu" name="blog">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="blog.png">
+                        </span>
+                        <span class="txt-link">Blog</span>
+                    </a>
+                </li>
+                <li class="pag-menu" name="sair">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="sair.png">
+                        </span>
+                        <span class="txt-link">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+ <!-- projeto -->
+
+        <div class="container">
+        
+        <h3>
+            Conheça os Projetos Integradores apresentados pelos alunos de DSM
+        </h3>
+        
+        <h1>
+            Projetos Integradores
+        </h1>
+
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <div class="slides">
+                <!-- Exemplo com três imagem, verificar as imagens-->
+                <img src="WhatsApp Image 2023-10-18 at 12.33.37.jpeg" alt="Imagem 1" />
+                <img src="WhatsApp Image 2023-10-18 at 12.33.37.jpeg" alt="Imagem 2" />
+                <img src="WhatsApp Image 2023-10-18 at 12.33.37.jpeg"Imagem 3" />
+            </div>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+        <div class="indicators"></div>
+
+        <script src="script2.js"></script>
+    </body>
+</html>
+
+
+
+<!-- onibus -->  
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Horários dos ônibus</title>
+        <!-- Incluímos o CSS e JS quando estiverem prontos -->
+        <link rel="stylesheet" href="styles_onibus.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Horários dos ônibus</h1>
+            <h4>É hora de voltar pra casa? Fique atento aos horários!</h4>
+
+            <div class="content">
+               
+                   <!-- Box à esquerda -->  
+                   <div class="box-left">
+                    <button class="search-button">PESQUISAR TRAJETO</button>
+                    <p> 
+
+                        Texto breve sobre como buscar rotas neste campo abaixo
+                        se necessário.
+                    </p>
+                    <div class="schedule">
+                        <h3>DIA / HORÁRIOS</h3>
+                        <p>Seg 7:40 e 12:35</p>
+                    </div>
+                </div>
+
+                <!-- Mapa à direita -->
+                <div class="box-right">
+                    <iframe src="https://www.google.com/maps/embed?...">
+                        <!-- Insira o link correto do mapa aqui -->
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <script src="script_onibus.js"></script>
+    </body>
+</html>

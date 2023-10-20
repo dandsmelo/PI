@@ -1,3 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+}
+body{
+    height: 100vh;
+}
+/*Menu lateral*/
+#side-bar{
+    width: 50px;
+    height: 100%;
+    background-color: #420389;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+#side-bar:hover{
+    width: 300px;
+}
+ul{
+    height: 100%;
+    list-style: none;
+}
+ul li.pag-menu{
+    transition: .2s;
+}
+ul li.pag-menu:hover{
+    background-color: #7506BF;
+}
+ul li.pag-menu a{
+    color: #ffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 25px;
+}
+ul li.pag-menu a .icon > img{
+    margin-left: 4px;
+}
+
+ul li.pag-menu a .txt-link{
+    margin-left: 40px;
+}
+
+
+
+
+/*projeto*/
+  
+        /* fundo azul de traz*/
+body {
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    
+}
+/*parte braca*/
+.container {
+    max-width: 1250px; /* Ajustar conforme necessário */
+    margin: auto;
+    padding: 20px;
+    background-color:  white; /* Ajustar para a cor desejada */
+    border-radius: 15px;
+    color: black;
+
+}
+
+
+/*texto da parte branca*/
+
+h1,
+
+h2 {
+    margin: 10px 0;
+    color: #420389;
+    
+}
+
+.carousel {
+    position: relative;
+    max-width: 60%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicators span {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    display: inline-block;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicators span.active {
+    background-color: purple;
+}
+
+
+.search-button {
+    background-color: #010326; /* Ajuste para a cor desejada */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.search-button:hover {
+    background-color: #150140; /* Cor mais escura para hover */
+
+}
+
+
+
+
+
 
 
 /* fundo azul */
@@ -9,7 +175,7 @@ body {
 }
 /*parte braca*/
 .container {
-    max-width: 750px; /* Ajustar conforme necessário */
+    max-width: 1250px; /* Ajustar conforme necessário */
     margin: auto;
     padding: 20px;
     background-color:  white; /* Ajustar para a cor desejada */
@@ -24,7 +190,6 @@ body {
 h1,
 
 h2 {
-    text-align: center;
     margin: 10px 0;
     color: #420389;
     
@@ -40,10 +205,11 @@ h2 {
 /*pesquisa do trajeto quadrado roxo*/
 .box-left {
     width: 35%; 
-    padding: 20px;
+    padding: 30px;
     background-color: #420389;
     border-radius: 15px;
     color: white;
+    text-align: center;
 }
 
 /*botao pesquisar trageto*/
@@ -64,9 +230,11 @@ h2 {
 }
 
 
+
 /*distancia das letras*/
 .schedule {
-    margin-top: 70px;
+    text-align: center;
+    margin-top: 90px;
 }
 /* largura do mapa*/
 .box-right {
