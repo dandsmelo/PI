@@ -92,10 +92,10 @@ body{
     font-size: 20px;
 }
 .div-cont-3{
-    margin: 3% 6% 4% 12%;
+    margin: 40px 0px 40px 150px;
 }
 .div-cont-4{
-    margin: 3% 12% 4% 0px;
+    margin: 40px 150px 40px 150px;
 }
 .btns{
     font-family: "Lato";
@@ -158,6 +158,7 @@ body{
     height: auto;
     position: absolute;
     opacity: 0;
+    transition: .2s;
 }
 #prev-button,
 #next-button {
@@ -212,6 +213,7 @@ body{
     position: absolute;
     border-radius: 10px;
     opacity: 0;
+    transition: .2s;
 }
 #prev-button2,
 #next-button2 {
