@@ -70,6 +70,7 @@ body {
     background-color:  white; /* Ajustar para a cor desejada */
     border-radius: 15px;
     color: black;
+    margin-left: px;
 
 }
 
@@ -181,6 +182,7 @@ body {
     background-color:  white; /* Ajustar para a cor desejada */
     border-radius: 15px;
     color: black;
+    margin-left: 9.5%;
  
 
 }
@@ -222,6 +224,9 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+#texto{
+margin-top: 9%;
 }
 
 .search-button:hover {
