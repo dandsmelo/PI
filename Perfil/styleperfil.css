@@ -223,28 +223,33 @@ textarea::placeholder {
 
 
 .centro-div {
-    transition: 0.3s;
+    position: relative; /* Adicione position: relative; */
     width: 65%;
     height: 65%;
     transition: background-color 0.3s;
+}
 
+.centro-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(5, 5, 5, 0.831);
+    opacity: 0; /* Defina a opacidade como 0 para começar */
+    transition: opacity 0.3s;
 }
 
 .centro-div:hover::before {
-    content: "";
-    position: absolute;
-    top: 245px;
-    right: 160px;
-    bottom: 35px;
-    left: 170px;
-    background: rgba(5, 5, 5, 0.541); 
-    border-radius: 20px;
+    opacity: 1; /* Aumente a opacidade para 1 quando houver hover */
 }
+
 
 .botao-no-centro {
     display: none;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(5, 5, 5); 
@@ -306,11 +311,12 @@ textarea::placeholder {
 
  #campo-descricao {
     width: 50%; 
-    height: 100%; 
+    height: 80%%; 
     background-color:#5213A3;
     margin-left: 0%;
     padding: 20px;
     text-align: center;
+    border-bottom: 0,1px white solid;
 }
 
 #campo-img{
