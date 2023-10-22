@@ -163,6 +163,7 @@ ul li.pag-menu a .txt-link{
 .text{
     margin-left: 5%;
     margin-top: 5%;
+    margin-right: 5%;
 }
 
 
@@ -223,7 +224,16 @@ ul li.pag-menu a .txt-link{
 .modal-content{
     margin: 0 auto;
     max-width: 450px;
-    margin-top: 0%;
+    margin-top: 3%;
+    background-color:  #001049; ;
+    padding: 0;
+    border-radius: 30px; 
+}
+
+.modal-content1{
+    margin: 0 auto;
+    max-width: 450px;
+    margin-top: 10%;
     background-color:  #001049; ;
     padding: 0;
     border-radius: 30px; 
@@ -274,4 +284,10 @@ textarea{
     padding: 10px;
     max-width: 400px;
     max-height: 20px;
+}
+
+input{
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ffff;
 }

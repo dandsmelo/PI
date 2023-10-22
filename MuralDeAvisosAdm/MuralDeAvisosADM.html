@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="MuralDeAvisosADM.js"></script> 
     <title>Mural de Avisos</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         
                 <ul>
                     <li class="pag-menu" name="perfil">
-                        <a href="#">
+                        <a href="#" onclick="redirecionarPerfil()">
                             <span class="icon">
                                 <img src="perfilIcon.png">
                             </span>
@@ -27,7 +28,7 @@
                         </a>
                     </li>
                     <li class="pag-menu" name="mural">
-                        <a href="#">
+                        <a href="#" onclick="redirecionarMural()">
                             <span class="icon">
                                 <img src="mural.png">
                             </span>
@@ -35,7 +36,7 @@
                         </a>
                     </li>
                     <li class="pag-menu" name="blog">
-                        <a href="#">
+                        <a href="#" onclick="redirecionarBlog()">
                             <span class="icon">
                                 <img src="blog.png">
                             </span>
@@ -56,7 +57,7 @@
         <div id="item2"></div>
         <div id="item22">
             
-            <button id="botao" onclick="openModal('dv-modal')"></button>
+            <button id="botao" onclick="openModal('dv-modal1')"></button>
         
         </div>
         <div id="item3"><p id="title">Oportunidades</p></div>
@@ -76,7 +77,9 @@
         </div>
         <div id="item9"></div>
 
-        <div id="dv-modal" class="modal">
+        <!--Modal para Editar-->
+
+       <div id="dv-modal" class="modal">
             <div class="modal-content">
                 <div class="modal-header">Editar</div>
                 
@@ -99,10 +102,26 @@
                     <button class="btn" onclick="closeModal('dv-modal')">Fechar</button>
                 </div>
             </div>
-        </div>
-    
-        <script src="MuralDeAvisosADM.js"></script> 
-        
+        </div> 
+
+        <!--Modal para senha-->
+        <div id="dv-modal1" class="modal">
+            <div class="modal-content1">
+                <div class="modal-header">Editar - Acesso ADM</div>
+                
+                <div class="modal-body">
+                    <form>
+                        <label for="oportunidades">Senha de Administrador</label>
+                        <input id="senhaInput" type="password" name="senha">
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button class="btn" onclick="closeModal('dv-modal1')">Fechar</button>
+                    <button class="btn" onclick="verificarSenha()">Editar</button>
+                </div>
+            </div>
+        </div>    
     </div>
     
 </body>

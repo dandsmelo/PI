@@ -37,3 +37,42 @@ function salvarDados(oportunidadesId, eventosId, secretariaId) {
 
 }
 
+function verificarSenha(){
+    let senhaInput = document.getElementById('senhaInput').value;
+
+    if(senhaInput === "1234"){
+        editarDados();
+    } else{
+        alert("Senha incorreta!")
+    }
+}
+
+function editarDados(){
+    console.log("Função editarDados chamada!");
+    closeModal('dv-modal1');
+    openModal('dv-modal');
+}
+
+//função redirecionar para o Perfil
+
+function redirecionarPerfil(){
+    var URL= "/Perfil/perfil.html";
+    window.location.href=(URL);
+}
+  
+  //função redirecionar para o Mural
+  
+function redirecionarMural(){
+    var URL = "/MuralDeAvisosAdm/MuralDeAvisosADM.html";
+    window.location.href = URL;
+}
+
+//função redirecionar para o Blog
+  
+function redirecionarBlog(){
+    var URL = "/BlogAluno1/paginaBlog.html"
+    window.location.href = (URL);
+}
+
+
+
