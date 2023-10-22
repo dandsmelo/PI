@@ -64,13 +64,17 @@ body {
 }
 /*parte braca*/
 .container {
+    display: flex;
+    width: 82.5%;
+    height: auto;
+    flex-direction: column;
     max-width: 1250px; /* Ajustar conforme necessário */
     margin: auto;
     padding: 20px;
     background-color:  white; /* Ajustar para a cor desejada */
     border-radius: 15px;
     color: black;
-    margin-left: px;
+    margin-left: 30%;
 
 }
 
@@ -163,12 +167,10 @@ h2 {
 
 
 
-
-
-
-
 /* fundo azul */
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-image: url(background.png);
     background-size: cover;
@@ -227,6 +229,7 @@ h2 {
 }
 #texto{
 margin-top: 9%;
+
 }
 
 .search-button:hover {
