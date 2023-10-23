@@ -62,32 +62,158 @@ body {
     background-size: cover;
     
 }
-/*parte braca*/
+/*parte braca1*/
 .container {
-    display: flex;
-    width: 82.5%;
-    height: auto;
-    flex-direction: column;
     max-width: 1250px; /* Ajustar conforme necessário */
     margin: auto;
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
     background-color:  white; /* Ajustar para a cor desejada */
     border-radius: 15px;
     color: black;
-    margin-left: 30%;
+    margin-left: px;
 
 }
-
-
-/*texto da parte branca*/
-
-h1,
-
-h2 {
-    margin: 10px 0;
-    color: #420389;
+/*parte braca1*/
+.container1 {
+    max-width: 1250px; /* Ajustar conforme necessário */
+    margin:20px 20px 20px 80px;
+    padding-bottom: 10px;
+    background-color: white; /* Ajustar para a cor desejada */
+    border-radius: 15px;
+    color: black;
+    display: inline-block;
+    position: relative;
     
 }
+
+.container1 img{
+     width:100%;
+     border-radius: 15px;
+     text-shadow: 0px 0px 5px;
+     
+
+}
+
+.box:hover > :not(:hover){  
+    opacity: .4;
+    transform: scale(0.9);
+    /* display: inline-block; */
+    /* padding:15px 15px 10px 5px;
+    margin: 15px 15px 15px 15px; */
+
+}
+
+.item1{
+    width: 15%; 
+    height: 25%; 
+    padding: 50px 40px 55px 30px;
+    background-color: #420389;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: .35s;
+    cursor: pointer;
+    display:inline-block;
+    margin: 3px 10px 10px 35px;
+   
+}
+
+.item2{
+    width: 15%; 
+    height: 25%;
+    padding: 50px 40px 55px 30px;
+    background-color: #420389;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    text-decoration-color: #fff;
+    transition: .35s;
+    cursor: pointer;
+    display:inline-block;
+    margin: 5px 10px 10px 35px; 
+   
+}
+
+.item3{
+    width: 15%; 
+    height: 25%;
+    padding: 50px 40px 55px 30px;
+    background-color: #420389;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: .35s;
+    cursor: pointer;
+    display:inline-block;
+    margin: 5px 10px 10px 35px;
+   
+}
+
+.item4{
+    width: 15%; 
+    height: 25%;
+    padding: 50px 40px 55px 30px;
+    background-color: #420389;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: .35s;
+    cursor: pointer;
+    display:inline-block;
+    margin: 5px 10px 10px 35px;   
+}
+
+.title{
+    padding:flex;
+    margin:0px 10px 20px 0px;
+    color: white;
+
+}
+
+.text{
+    text-align:center;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 20px 0px;
+    color: white;
+}
+
+.button{
+    width: 75%; 
+    height: 50%;
+    padding:25px 10px 5px 10px;
+    margin:25px 10px 10px 10px;
+
+}
+
+.btn{
+    border: none;
+    margin: 0px 0px 0px 15px;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color:#5213A3;
+    box-shadow:0px 5px 8px 2px;
+    border-radius:10px;
+
+}
+/*texto da parte branca*/
+
+h1 {
+    padding: 15px 0px 0px 15px;
+    color: #420389;
+
+    
+}
+
+/* h2 {
+    padding: 15px 0px 0px 15px;
+    color: #ffff;
+    
+} */
 
 .carousel {
     position: relative;
@@ -167,10 +293,12 @@ h2 {
 
 
 
+
+
+
+
 /* fundo azul */
 body {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     background-image: url(background.png);
     background-size: cover;
@@ -229,7 +357,6 @@ h2 {
 }
 #texto{
 margin-top: 9%;
-
 }
 
 .search-button:hover {
