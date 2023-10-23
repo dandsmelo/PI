@@ -91,6 +91,11 @@
                     <input type="text" id="user-name-input" placeholder="Alterar Nome">
                     
                     <input type="text" id="user-description-input" placeholder="Alterar sua Descrição"></br>
+
+                    <textarea id="sobre" placeholder="Sobre Você" name="opt" rows="4" cols="50"></textarea><br><br>
+
+                    <input type="url" id="link-portfolio" placeholder="Link do seu Portfólio"></br>
+                
                     <button class="botao" type="button" onclick="updateProfile()">Salvar Alterações</button>
                     <button class="botao" type="button" onclick="closeEditModal()">Fechar</button>
                 </form>
@@ -100,7 +105,7 @@
 
         <div id="projetos-salvos">
             <div class="guia ativa" id="guia-projetos">Projetos</div>
-            <div class="guia" id="guia-salvos">Salvos</div>
+            <div class="guia" id="guia-salvos">Sobre</div>
         </div>
 
         <div id=div-adc-projetos>
@@ -141,8 +146,9 @@
         </div>
         
         <div id="salvos" style="display: none;">
-            <p>Projeto Salvos</p>    
-
+            <h3>Sobre</h3>
+            <p id="sobre-vc">Escreva sobre você</p>
+            <a href="" id="link-port">Link Portfólio</a>
         </div>
         
         <div id="add-projetos" class="modal">

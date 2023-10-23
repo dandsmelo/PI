@@ -14,6 +14,8 @@ const coverPhotoFile = document.getElementById('cover-photo-file').files[0];
 const profilePhotoFile = document.getElementById('profile-photo-file').files[0];
 const userName = document.getElementById('user-name-input').value;
 const userDescription = document.getElementById('user-description-input').value;
+const userSobre = document.getElementById('sobre').value;
+const linkPort = document.getElementById('link-portfolio').value;
 
 if (coverPhotoFile) {
   const coverPhotoURL = URL.createObjectURL(coverPhotoFile);
@@ -26,10 +28,17 @@ if (profilePhotoFile) {
 }
 
 document.getElementById('user-name').textContent = userName;
+
 document.getElementById('user-description').textContent = userDescription;
+
+document.getElementById('sobre-vc').textContent= userSobre;
+
+document.getElementById('link-port').textContent= linkPort;
+
 
 closeEditModal();
 }
+
 
 // Função para abrir o modal de adição de projetos
 function openAddProjetos() {

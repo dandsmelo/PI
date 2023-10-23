@@ -79,7 +79,7 @@ ul{
 #editar{
     position: absolute;  
     top: 70px;       
-    right: 160px;
+    right: 70px;
 }
 
 #img-user{
@@ -335,7 +335,7 @@ textarea::placeholder {
 #div-adc-projetos{ 
     display: flex;  
     justify-content:flex-end;
-    margin-right: 160px;
+    margin-right: 70px;
     margin-top:10px;
     margin-bottom: 10px;
  }
@@ -432,9 +432,24 @@ ul li.pag-menu a .txt-link{
 #salvos {
     background-color: #5213A3;
     color: white;
+    width: 61%;
+    height: 40%;
+    display: flex;
     padding: 20px;
     border-radius:10px;
-    width: 60%;
-    height: 15%;
+   
     margin-left: 18%;
+    line-height: 30px;
+    
+}
+
+/*LINKS*/
+
+a {
+    color: rgb(247, 247, 247);
+}
+  
+a:hover {
+    color: red;
+    text-decoration: underline;
 }
