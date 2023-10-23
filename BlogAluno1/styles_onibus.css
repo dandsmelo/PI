@@ -312,7 +312,8 @@ body {
     background-color:  white; /* Ajustar para a cor desejada */
     border-radius: 15px;
     color: black;
-    margin-left: 9.5%;
+    margin-left: 11%;
+    margin-bottom: 2%;
  
 
 }
@@ -381,4 +382,9 @@ margin-top: 9%;
 iframe {
     width: 100%;
     height: 300px;
+}
+
+#img-fatec{
+    width: 100%;
+    border-radius: 15px;
 }
