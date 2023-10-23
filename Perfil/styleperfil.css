@@ -310,14 +310,18 @@ textarea::placeholder {
 
 
  #campo-descricao {
+    display: flex;
+    flex-direction: column;
     width: 50%; 
-    height: 80%%; 
+    height: 91.5%; 
     background-color:#5213A3;
     margin-left: 0%;
-    padding: 20px;
-    text-align: center;
+    padding: 7px;
+    text-align: left;
     border-bottom: 0,1px white solid;
+    
 }
+
 
 #campo-img{
     background-color: #5213A3;
