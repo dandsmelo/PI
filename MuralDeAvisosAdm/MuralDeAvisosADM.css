@@ -284,10 +284,23 @@ textarea{
     padding: 10px;
     max-width: 400px;
     max-height: 20px;
+    border: none; 
+    color:white;
+    background-color: rgba(7, 7, 7, 0.301);
 }
 
-input{
+/*input{
     border-radius: 20px;
     padding: 10px;
     border: 1px solid #ffff;
+}*/
+
+input {
+    border-radius: 20px;
+    border: none; 
+    margin-bottom: 20px;
+    color:white;
+    padding: 10px;
+    background-color: rgba(7, 7, 7, 0.301);
+
 }
