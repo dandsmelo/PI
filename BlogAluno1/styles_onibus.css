@@ -66,7 +66,7 @@ body {
 .container {
     width: 80%;
     /* max-width: 1250px; */ /* Ajustar conforme necessário */
-    margin: auto;
+    margin: 5% 10% 0% 10%;
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
@@ -74,10 +74,16 @@ body {
     background-color:  white; /* Ajustar para a cor desejada */
     border-radius: 15px;
     color: black;
-    margin-left: px;
+    
 
 }
 
+.box{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
 
 .box:hover > :not(:hover){  
     opacity: .4;
@@ -88,10 +94,10 @@ body {
 
 }
 
-.item1{
+.item{
     width: 15%; 
     height: 25%; 
-    padding: 50px 40px 55px 30px;
+    padding: 50px 30px 55px 30px;
     background-color: #420389;
     border-radius: 15px;
     color: white;
@@ -99,80 +105,31 @@ body {
     transition: .35s;
     cursor: pointer;
     display:inline-block;
-    margin: 3px 10px 10px 35px;
-   
+    margin: 10px;
 }
 
-.item2{
-    width: 15%; 
-    height: 25%;
-    padding: 50px 40px 55px 30px;
-    background-color: #420389;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    text-decoration-color: #fff;
-    transition: .35s;
-    cursor: pointer;
-    display:inline-block;
-    margin: 5px 10px 10px 35px; 
-   
-}
-
-.item3{
-    width: 15%; 
-    height: 25%;
-    padding: 50px 40px 55px 30px;
-    background-color: #420389;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    transition: .35s;
-    cursor: pointer;
-    display:inline-block;
-    margin: 5px 10px 10px 35px;
-   
-}
-
-.item4{
-    width: 15%; 
-    height: 25%;
-    padding: 50px 40px 55px 30px;
-    background-color: #420389;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    transition: .35s;
-    cursor: pointer;
-    display:inline-block;
-    margin: 5px 10px 10px 35px;   
-}
 
 .title{
     padding:flex;
-    margin:0px 10px 20px 0px;
+    margin-bottom: 20px;
     color: white;
 
 }
 
 .text{
     text-align:center;
-    padding:0px 0px 0px 0px;
-    margin:0px 0px 20px 0px;
+    margin-bottom: 20px;
     color: white;
 }
 
 .button{
-    width: 75%; 
-    height: 50%;
-    padding:25px 10px 5px 10px;
-    margin:25px 10px 10px 10px;
-
+    font-size: 10px;
+    text-align: center;
+    
 }
 
 .btn{
     border: none;
-    margin: 0px 0px 0px 15px;
     padding: 5px 15px;
     font-size: 20px;
     cursor: pointer;
@@ -184,12 +141,6 @@ body {
 }
 /*texto da parte branca*/
 
-h1 {
-    padding: 15px 0px 0px 15px;
-    color: #420389;
-
-    
-}
 
 /* h2 {
     padding: 15px 0px 0px 15px;
@@ -274,37 +225,9 @@ h1 {
 }
 
 
-
-
-
-
-
-/* fundo azul */
-body {
-    height: 100vh;
-    background-image: url(background.png);
-    background-size: cover;
-    
-}
-/*parte braca*/
-.container {
-    max-width: 1250px; /* Ajustar conforme necessário */
-    margin: auto;
-    padding: 20px;
-    background-color:  white; /* Ajustar para a cor desejada */
-    border-radius: 15px;
-    color: black;
-    margin-left: 11%;
-    margin-bottom: 2%;
- 
-
-}
-
 /*texto da parte branca*/
 
-h1,
-
-h2 {
+h1{
     margin: 10px 0;
     color: #420389;
     
@@ -313,14 +236,19 @@ h2 {
 
 .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 30px;
+}
+
+#space-cont4{
+margin-bottom: 5%;
 }
 
 /*pesquisa do trajeto quadrado roxo*/
 .box-left {
     width: 35%; 
     padding: 30px;
+    margin-right: 20px;
     background-color: #420389;
     border-radius: 15px;
     color: white;
