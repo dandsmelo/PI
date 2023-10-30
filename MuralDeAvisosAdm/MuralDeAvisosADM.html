@@ -101,6 +101,59 @@
             </div>
         </div> 
 
+        <!--Modal de adicionar-->
+        <div id="dv-modal-adc" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">Adicionar</div>
+                
+                <div class="modal-body">
+                    <form>
+                        <label for="oportunidades">Oportunidades</label>
+                        <textarea id="title1Input" name="opt" rows="4" cols="50"></textarea><br><br>
+        
+                        <label for="eventos">Eventos</label>
+                        <textarea id="title2Input" name="evt" rows="4" cols="50"></textarea><br><br>
+    
+                        <label for="secretaria">Secretária</label>
+                        <textarea id="title3Input" name="sct" rows="4" cols="50"></textarea><br><br>
+    
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn" onclick="salvarDados('title1', 'title2', 'title3')">Salvar</button>
+                    <button class="btn" onclick="closeModal('dv-modal-adc')">Fechar</button>
+                </div>
+            </div>
+        </div> 
+
+        <!--Modal de excluir-->
+        <div id="dv-modal-rem" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">Excluir</div>
+                
+                <div class="modal-body">
+                    <form>
+                        <label for="oportunidades">Oportunidades</label>
+                        <textarea id="title1Input" name="opt" rows="4" cols="50"></textarea><br><br>
+        
+                        <label for="eventos">Eventos</label>
+                        <textarea id="title2Input" name="evt" rows="4" cols="50"></textarea><br><br>
+    
+                        <label for="secretaria">Secretária</label>
+                        <textarea id="title3Input" name="sct" rows="4" cols="50"></textarea><br><br>
+    
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn" onclick="salvarDados('title1', 'title2', 'title3')">Salvar</button>
+                    <button class="btn" onclick="closeModal('dv-modal-rem')">Fechar</button>
+                </div>
+            </div>
+        </div> 
+
+
         <!--Modal para senha-->
         <div id="dv-modal1" class="modal">
             <div class="modal-content1">
@@ -116,6 +169,8 @@
                 <div class="modal-footer">
                     <button class="btn" onclick="closeModal('dv-modal1')">Fechar</button>
                     <button class="btn" onclick="verificarSenha()">Editar</button>
+                    <button class="btn" onclick="verificarSenha1()">Adicionar</button>
+                    <button class="btn" onclick="verificarSenha2()">Excluir</button>
                 </div>
             </div>
         </div>    
