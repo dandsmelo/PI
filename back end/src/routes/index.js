@@ -25,7 +25,7 @@ router
     .get('/secretaria', Secretaria.VerTodos)
     .post('/addSecretaria', Secretaria.Adicionar)
     .put('/updSecretaria/:id', Secretaria.Atualizar)
-    .delete('/delEve/:id', Secretaria.Excluir)
+    .delete('/delSC/:id', Secretaria.Excluir)
     
 
     //projetos
