@@ -121,23 +121,23 @@
                 <div class="modal-header">Adicionar</div>
 
                 <div class="modal-body">
-                    <form>
+                    <form id="adcDATA">
                         <label for="oportunidades">Oportunidades</label>
-                        <textarea id="title1Input" name="opt" rows="4" cols="50"></textarea><br><br>
+                        <textarea id="title1Input" name="ADCopt" rows="4" cols="50"></textarea><br><br>
 
                         <label for="eventos">Eventos</label>
-                        <textarea id="title2Input" name="evt" rows="4" cols="50"></textarea><br><br>
+                        <textarea id="title2Input" name="ADCevt" rows="4" cols="50"></textarea><br><br>
 
                         <label for="secretaria">Secretária</label>
-                        <textarea id="title3Input" name="sct" rows="4" cols="50"></textarea><br><br>
+                        <textarea id="title3Input" name="ADCsct" rows="4" cols="50"></textarea><br><br>
 
-                    </form>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="submit" class="btn">Salvar</button>
-                    <button class="btn" onclick="closeModal('dv-modal-adc')">Fechar</button>
-                </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="submit" class="btn">Salvar</button>
+                        <button class="btn" onclick="closeModal('dv-modal-adc')">Fechar</button>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -193,7 +193,51 @@
         </div>
     </div>
 
+<!-- 
+    <form id="adcDATA">
+        <label for="oportunidades">Oportunidades</label>
+        <textarea id="title1Input" name="ADCopt" rows="4" cols="50"></textarea><br><br>
+
+        <label for="eventos">Eventos</label>
+        <textarea id="title2Input" name="ADCevt" rows="4" cols="50"></textarea><br><br>
+
+        <label for="secretaria">Secretária</label>
+        <textarea id="title3Input" name="ADCsct" rows="4" cols="50"></textarea><br><br>
+
+    </div>
+    
+    <div class="modal-footer">
+        <button type="submit" class="btn">Salvar</button>
+        <button class="btn" onclick="closeModal('dv-modal-adc')">Fechar</button>
+    </div> -->
+</form>
     <script>
+
+
+            const formADD = document.querySelector("#adcDATA");
+
+                formADD.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                const formADCN = new FormData(formADD);
+
+                let descAdd = formADCN.get("ADCopt");
+
+
+                const data = new URLSearchParams(formADCN)
+
+                fetch('http://localhost:5433/projeto/addOportunidades', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body :  JSON.stringify({
+                            "descricao": `${user}`,
+                        })
+                }).then(res => res.json())
+                    .then(data => console.log(data))
+                    .catch(error => console.log(error))
+
+                })
+
 
             const delSC = document.querySelector("#deldata")
             
