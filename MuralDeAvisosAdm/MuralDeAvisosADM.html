@@ -147,23 +147,26 @@
                 <div class="modal-header">Excluir</div>
 
                 <div class="modal-body">
-                    <form>
+                    <form id="deldata">
                         <label for="oportunidades">Oportunidades</label>
-                        <textarea id="title1Input" name="opt" rows="4" cols="50"></textarea><br><br>
+                         <br>
+                        <input id="editDataOP" name="idDelOp" placeholder="ID do campo">
 
                         <label for="eventos">Eventos</label>
-                        <textarea id="title2Input" name="evt" rows="4" cols="50"></textarea><br><br>
+                         <br>
+                        <input id="editDataOP" name="idDelEv" placeholder="ID do campo">
 
                         <label for="secretaria">Secretária</label>
-                        <textarea id="title3Input" name="sct" rows="4" cols="50"></textarea><br><br>
+                         <br>
+                        <input id="editDataOP" name="idDelSC" placeholder="ID do campo">
 
-                    </form>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn">Salvar</button>
-                    <button class="btn" onclick="closeModal('dv-modal-rem')">Fechar</button>
-                </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="submit" class="btn">Salvar</button>
+                        <button class="btn" onclick="closeModal('dv-modal-rem')">Fechar</button>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -192,6 +195,65 @@
 
     <script>
 
+            const delSC = document.querySelector("#deldata")
+            
+            delSC.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                const formDelSC = new FormData(delSC);
+
+                let idDel = formDelSC.get("idDelSC")
+                
+                const data = new URLSearchParams(formDelSC)
+                const url = `http://localhost:5433/projeto/delSC/${idDel}`
+                console.log(url)
+                fetch(url, {
+                    method: 'DELETE',
+                    headers: { 'Content-Type': 'application/json' }
+                }).then(res => res.json())
+                .then(data => console.log(data))
+                .catch(error => console.log(error))
+            })
+
+        const delOp = document.querySelector("#deldata")
+            
+            delOp.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                const formDelOp = new FormData(delOp);
+
+                let idDel = formDelOp.get("idDelOp")
+                
+                const data = new URLSearchParams(formDelOp)
+                const url = `http://localhost:5433/projeto/delOport/${idDel}`
+                console.log(url)
+                fetch(url, {
+                    method: 'DELETE',
+                    headers: { 'Content-Type': 'application/json' }
+                }).then(res => res.json())
+                .then(data => console.log(data))
+                .catch(error => console.log(error))
+            })
+
+        const delEv = document.querySelector("#deldata")
+            
+            delEv.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                const formDelEv = new FormData(delEv);
+
+                let idDel = formDelEv.get("idDelEv")
+                
+                const data = new URLSearchParams(formDelEv)
+                const url = `http://localhost:5433/projeto/delEve/${idDel}`
+                console.log(url)
+                fetch(url, {
+                    method: 'DELETE',
+                    headers: { 'Content-Type': 'application/json' }
+                }).then(res => res.json())
+                .then(data => console.log(data))
+                .catch(error => console.log(error))
+            })
 
         const formEditEv = document.querySelector("#edit_data");
 
