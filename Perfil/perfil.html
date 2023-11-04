@@ -160,7 +160,7 @@
         <div id="add-projetos" class="modal">
             <div class="edit-modal-content">
             <h2>Adicionar Projeto</h2>
-            <form id="user-profile-form">
+            <form id="user-profile-form" action="/projeto/upload" method="post" enctype="multipart/form-data">
                 <input type="text" id="nome-projeto" placeholder="Nome do Projeto"> 
 
                 
@@ -169,7 +169,7 @@
                 <input type="url" id="link-projeto" placeholder="Link do Repositorio do Projeto"></br>
 
                 <p>Selecione foto do projeto:</p>
-                <input type="file" id="foto-projeto" accept="image/*" placeholder="Foto de Capa">
+                <input type="file" id="foto-projeto" accept="image/*">
 
                 <button class="botao" type="button" onclick="updateProjeto()">Salvar Alterações</button>
                 <button class="botao" type="button" onclick="closeEditProjeto()">Fechar</button>
