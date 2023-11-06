@@ -1,0 +1,43 @@
+https://www.youtube.com/watch?v=Y9NvacbyqTk
+
+{
+  "nome" : "thiago",
+  "ra" : "2171392311021",
+  "email" : "thiago@email.com",
+  "senha" : "1234"
+}
+
+insert into eventos values ('', 'evento - 10/04', '', '');
+
+insert into oportunidades values ('', 'estagio - itau', '', '');
+
+insert into secretaria values ('', 'novos horarios - 15:00', '', '');
+
+
+create database projeto;
+use projeto;
+
+
+
+create database projeto;
+use projeto;
+
+select * from eventos;
+select * from secretaria;
+select * from oportunidades;
+select * from usuarios;
+select * from perfils;
+
+
+truncate table perfils;
+truncate table usuarios;
+drop table perfils;
+truncate table eventos;
+truncate table secretaria;
+truncate table oportunidades;
+
+insert into eventos values ('', 'evento - 10/04', '', '');
+
+insert into oportunidades values ('', 'estagio - itau', '', '');
+
+insert into secretaria values ('', 'novos horarios - 15:00', '', '');
