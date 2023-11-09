@@ -1,0 +1,16 @@
+create database projeto;
+use projeto;
+drop database projeto;
+
+select * from eventos;
+select * from secretaria;
+select * from oportunidades;
+select * from usuarios;
+select * from perfils;
+
+
+insert into eventos values ('', 'evento - 10/04', '', '');
+
+insert into oportunidades values ('', 'estagio - itau', '', '');
+
+insert into secretaria values ('', 'novos horarios - 15:00', '', '');
