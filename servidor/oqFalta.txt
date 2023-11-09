@@ -1,6 +1,0 @@
-controllers do perfil
-
-fetchs
-
-fetch do mural
-enviar banco fisico
