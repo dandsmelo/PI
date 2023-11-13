@@ -63,9 +63,11 @@
         </div>
 
         <div id="perfil">
-
-            <img id="foto" src="ff6a01e0377bb7df597f856a5f5f73c5.png" alt="Foto de Perfil">
+            <div>
+                <img id="foto" src="ff6a01e0377bb7df597f856a5f5f73c5.png" alt="Foto de Perfil">
     
+            </div>
+
             <div id="infos">
                 <h1 id="user-name" ></h1>
                 <p id="user-description"></p>
@@ -83,6 +85,10 @@
                 <h2>Editar Perfil</h2>
                 <form id="profileEDIT">
                     <p>Alterar foto da capa:</p>
+                    <input type="file" id="cover-photo-file" accept="image/*" placeholder="Foto de Capa">
+
+                    <p>Alterar foto de perfil:</p>
+                    <input type="file" id="profile-photo-file" accept="image/*" placeholder="Foto de Perfil">
                  
                     <input name="username" type="text" id="user-name-input" placeholder="Alterar Nome">
 
@@ -95,7 +101,7 @@
                     <input name="LinkPort" type="url" id="link-portfolio"
                         placeholder="Link do seu Portfólio"></br>
 
-                    <button class="botao" type="submit">Salvar Alterações</button>
+                    <button class="botao" type="submit" onclick="updateProfile()">Salvar Alterações</button>
                     <button class="botao" type="button" onclick="closeEditModal()">Fechar</button>
                 </form>
                 </div>
