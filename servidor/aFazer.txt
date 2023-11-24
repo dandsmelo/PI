@@ -1,0 +1,3 @@
+- arrumar pagina perfil
+-deslogar
+-arrumar página do blog
