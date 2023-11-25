@@ -46,6 +46,13 @@
 
     </div>
 
+    <div id="customAlert" class="modal">
+      <div class="modal-content">
+          <p>Usuário Cadastrado!</p>
+          <button type="button" onclick="closeAlert()" id="btnClose">OK</button>
+      </div>
+  </div>
+
     <script>
 
         const formE1 = document.querySelector(".form");
@@ -75,6 +82,7 @@
             .then(data => {
               console.log(data)
               if(data == 5){
+                showAlert()
                 document.location.href= './acessoST.html'
               }
 
@@ -91,4 +99,5 @@
 
     </script>
   </body>
+  <script src="code.js"></script>
 </html>
